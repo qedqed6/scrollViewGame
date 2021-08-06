@@ -1,24 +1,182 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19115.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19107.5"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="scrollViewGame" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jGH-Zw-LGg">
+                                <rect key="frame" x="45" y="63" width="300" height="298"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <imageReference key="image" image="aqua"/>
+                            </imageView>
+                            <visualEffectView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="S6w-Lq-UdZ">
+                                <rect key="frame" x="45" y="63" width="300" height="300"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="lxD-uq-5tj">
+                                    <rect key="frame" x="0.0" y="0.0" width="300" height="300"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UK6-57-8WT">
+                                            <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        </imageView>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="J99-jr-HQd">
+                                            <rect key="frame" x="100" y="0.0" width="100" height="100"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        </imageView>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SaP-2Z-wXV">
+                                            <rect key="frame" x="200" y="0.0" width="100" height="100"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        </imageView>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GMI-HY-vri">
+                                            <rect key="frame" x="0.0" y="100" width="100" height="100"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        </imageView>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="o96-El-aUP">
+                                            <rect key="frame" x="100" y="100" width="100" height="100"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        </imageView>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="o3Q-Rj-Byu">
+                                            <rect key="frame" x="200" y="100" width="100" height="100"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        </imageView>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3Wi-uw-ATo">
+                                            <rect key="frame" x="0.0" y="200" width="100" height="100"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        </imageView>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7ja-Gq-Nwn">
+                                            <rect key="frame" x="100" y="200" width="100" height="100"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        </imageView>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CQe-Lc-oBz">
+                                            <rect key="frame" x="200" y="200" width="100" height="100"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        </imageView>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="p1T-NP-aF8">
+                                            <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        </imageView>
+                                    </subviews>
+                                </view>
+                                <blurEffect style="dark"/>
+                            </visualEffectView>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NgN-Pl-ldr">
+                                <rect key="frame" x="45" y="474" width="300" height="300"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IIC-eh-Kax" customClass="UISquareScrollView" customModule="scrollViewGame" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <viewLayoutGuide key="contentLayoutGuide" id="La1-7v-P1M"/>
+                                        <viewLayoutGuide key="frameLayoutGuide" id="7T4-jf-5xh"/>
+                                    </scrollView>
+                                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FLt-v9-VAY" customClass="UISquareScrollView" customModule="scrollViewGame" customModuleProvider="target">
+                                        <rect key="frame" x="100" y="0.0" width="100" height="100"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <viewLayoutGuide key="contentLayoutGuide" id="Q7H-W7-fbZ"/>
+                                        <viewLayoutGuide key="frameLayoutGuide" id="PZY-cC-ZMS"/>
+                                    </scrollView>
+                                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="04H-jK-wJW" customClass="UISquareScrollView" customModule="scrollViewGame" customModuleProvider="target">
+                                        <rect key="frame" x="200" y="0.0" width="100" height="100"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <viewLayoutGuide key="contentLayoutGuide" id="1Kk-8p-6LX"/>
+                                        <viewLayoutGuide key="frameLayoutGuide" id="mmy-X4-lvf"/>
+                                    </scrollView>
+                                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KOC-8R-TEs" customClass="UISquareScrollView" customModule="scrollViewGame" customModuleProvider="target">
+                                        <rect key="frame" x="100" y="100" width="100" height="100"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <viewLayoutGuide key="contentLayoutGuide" id="rtr-9I-kWU"/>
+                                        <viewLayoutGuide key="frameLayoutGuide" id="r9s-mg-GrS"/>
+                                    </scrollView>
+                                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Vd2-io-s3H" customClass="UISquareScrollView" customModule="scrollViewGame" customModuleProvider="target">
+                                        <rect key="frame" x="200" y="100" width="100" height="100"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <viewLayoutGuide key="contentLayoutGuide" id="4nV-uZ-rcI"/>
+                                        <viewLayoutGuide key="frameLayoutGuide" id="551-PF-Gq6"/>
+                                    </scrollView>
+                                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fLd-ef-GKf" customClass="UISquareScrollView" customModule="scrollViewGame" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="200" width="100" height="100"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <viewLayoutGuide key="contentLayoutGuide" id="619-dH-2AD"/>
+                                        <viewLayoutGuide key="frameLayoutGuide" id="LGm-vm-5Vk"/>
+                                    </scrollView>
+                                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0UB-5X-28z" customClass="UISquareScrollView" customModule="scrollViewGame" customModuleProvider="target">
+                                        <rect key="frame" x="100" y="200" width="100" height="100"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <viewLayoutGuide key="contentLayoutGuide" id="s3c-on-Zbf"/>
+                                        <viewLayoutGuide key="frameLayoutGuide" id="3Ww-Ao-49S"/>
+                                    </scrollView>
+                                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SNs-aK-SRd" customClass="UISquareScrollView" customModule="scrollViewGame" customModuleProvider="target">
+                                        <rect key="frame" x="200" y="200" width="100" height="100"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <viewLayoutGuide key="contentLayoutGuide" id="LWz-J3-ByU"/>
+                                        <viewLayoutGuide key="frameLayoutGuide" id="cBa-CE-VPd"/>
+                                    </scrollView>
+                                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ggb-5y-RpN" customClass="UISquareScrollView" customModule="scrollViewGame" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="100" width="100" height="100"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <viewLayoutGuide key="contentLayoutGuide" id="ohF-nf-yqB"/>
+                                        <viewLayoutGuide key="frameLayoutGuide" id="I9E-k2-p3S"/>
+                                    </scrollView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="X42-76-Xzt">
+                                <rect key="frame" x="145" y="372.33333333333337" width="100" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <imageReference key="image" image="arrow.up" catalog="system"/>
+                            </imageView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <connections>
+                        <outlet property="characterImageView" destination="jGH-Zw-LGg" id="QF7-Bm-ms1"/>
+                        <outlet property="maskView" destination="S6w-Lq-UdZ" id="OfT-Vp-Fl3"/>
+                        <outlet property="puzzleView" destination="NgN-Pl-ldr" id="azJ-sT-3AS"/>
+                        <outletCollection property="puzzleImageViews" destination="p1T-NP-aF8" collectionClass="NSMutableArray" id="Mqo-JZ-B6B"/>
+                        <outletCollection property="puzzleImageViews" destination="J99-jr-HQd" collectionClass="NSMutableArray" id="4s0-t7-97j"/>
+                        <outletCollection property="puzzleImageViews" destination="SaP-2Z-wXV" collectionClass="NSMutableArray" id="f95-7A-1bT"/>
+                        <outletCollection property="puzzleImageViews" destination="GMI-HY-vri" collectionClass="NSMutableArray" id="bKr-Oe-clF"/>
+                        <outletCollection property="puzzleImageViews" destination="o96-El-aUP" collectionClass="NSMutableArray" id="XMs-gZ-ucs"/>
+                        <outletCollection property="puzzleImageViews" destination="o3Q-Rj-Byu" collectionClass="NSMutableArray" id="Odc-H9-VxU"/>
+                        <outletCollection property="puzzleImageViews" destination="3Wi-uw-ATo" collectionClass="NSMutableArray" id="Hy6-3p-Qib"/>
+                        <outletCollection property="puzzleImageViews" destination="7ja-Gq-Nwn" collectionClass="NSMutableArray" id="k6S-6K-Urw"/>
+                        <outletCollection property="puzzleImageViews" destination="CQe-Lc-oBz" collectionClass="NSMutableArray" id="Ifa-Pu-nJh"/>
+                        <outletCollection property="squareEelements" destination="IIC-eh-Kax" collectionClass="NSMutableArray" id="PK1-ay-wx8"/>
+                        <outletCollection property="squareEelements" destination="FLt-v9-VAY" collectionClass="NSMutableArray" id="2ZL-sg-Tnf"/>
+                        <outletCollection property="squareEelements" destination="04H-jK-wJW" collectionClass="NSMutableArray" id="DVx-a0-qbl"/>
+                        <outletCollection property="squareEelements" destination="Ggb-5y-RpN" collectionClass="NSMutableArray" id="Nqj-4X-RwR"/>
+                        <outletCollection property="squareEelements" destination="KOC-8R-TEs" collectionClass="NSMutableArray" id="uai-We-Qeh"/>
+                        <outletCollection property="squareEelements" destination="Vd2-io-s3H" collectionClass="NSMutableArray" id="Sg6-7f-C4d"/>
+                        <outletCollection property="squareEelements" destination="fLd-ef-GKf" collectionClass="NSMutableArray" id="xNy-FZ-Qms"/>
+                        <outletCollection property="squareEelements" destination="0UB-5X-28z" collectionClass="NSMutableArray" id="8A4-91-oaq"/>
+                        <outletCollection property="squareEelements" destination="SNs-aK-SRd" collectionClass="NSMutableArray" id="FEr-vh-x1T"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="123.07692307692307" y="93.127962085308056"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="aqua" width="529" height="1190"/>
+        <image name="arrow.up" catalog="system" width="120" height="128"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>
